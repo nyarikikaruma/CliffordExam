@@ -1,18 +1,19 @@
 # LaravelExam
-In this project there is TravelAgent which is laravel backend and TravelAgentFrontend which vue js frontend.
-To run the projects, clone the repository then for the laravel backend, ensure you create a database named travel_agents. 
-The database password is Kamaramike8431.
-You can edit the env file for configuration.
-then run composer install
+In this project there is LaravelBackendAndFrontend folder, which is the folder with project.
+When you open this folder open the above named folder and open it in your IDE of choice. 
+Then run npm install to install all the Vue Js node packages.
+
+then run composer install to install php packages for Laravel,
+
 then run php artisan key:generate
+then run cp .env.example .env to make a copy of the env file
+then add the database name on the env file 
 then run php artisan migrate
 then run php artisan db:seed
 then php artisan serve
 
-fot the front end, run npm install then run npm run dev.
-Ensure that the laravel localhost is running on port 8000, otherwise you will have issues.
 
-I did not implement user authentication as time caught up with me, so on the BookingForm.vue on line 34, you can copy a user id from the database from the seeded users. 
-I also did not have enough time to work on the ui.
 
-I used Routers in Vue js to navigate the user to different sections, and I decided to use backend and frontend each in their own repository to make it easier for the development process.
+I used Routers in Vue js to navigate the user to different sections,
+I used database seeders to easien the process of testing the project, 
+I also made the project in the same repo to avoid CORS issues when the projects are in different domains,
